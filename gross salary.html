@@ -1,0 +1,31 @@
+
+<!-- 4. Write a javascript Program to find gross salary.(compulsory user input)
+               Ex. Base Salary: 100 RS, HRA=10%, DA=5%, TA=8%.
+               Ans = 123 RS.(compulsory user input) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr.1 Basic calculation</title>
+</head>
+<body>
+            
+</body>
+</html>
+<script>
+    var  baseSalary = parseInt(prompt("Enter base salary:"));
+    var  hra = parseInt(prompt("Enter HRA percentage:"));
+    var  da = parseInt(prompt("Enter DA percentage:"));
+    var  ta = parseInt(prompt("Enter TA percentage:"));
+    
+    
+    var  hraAmount = baseSalary * (hra / 100);
+    var  daAmount = baseSalary * (da / 100);
+    var  taAmount = baseSalary * (ta / 100);
+    var  grossSalary = baseSalary + hraAmount + daAmount + taAmount;
+    
+    document.write("Gross salary: " + grossSalary + " RS");
+    
+</script>
